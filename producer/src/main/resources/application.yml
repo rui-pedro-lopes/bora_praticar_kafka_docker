@@ -5,5 +5,4 @@ spring:
       key-serializer: org.apache.kafka.common.serialization.StringSerializer
       value-serializer: org.apache.kafka.common.serialization.StringSerializer
 
-topic:
-  bora-praticar: topic_bora_praticar_kafka
+kafkaTopic: kafka_topic

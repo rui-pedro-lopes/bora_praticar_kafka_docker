@@ -7,8 +7,7 @@ spring:
       key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
       value-deserializer: org.apache.kafka.common.serialization.StringDeserializer
 
-topic:
-  bora-praticar: topic_bora_praticar_kafka
+kafkaTopic: kafka_topic
 
 server:
   port : 8081

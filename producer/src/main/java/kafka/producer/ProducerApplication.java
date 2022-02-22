@@ -1,14 +1,13 @@
-package br.com.maddytec.kafka.consumer;
+package kafka.producer;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.kafka.annotation.EnableKafka;
 
 @SpringBootApplication
-public class ConsumerApplication {
+public class ProducerApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(ConsumerApplication.class, args);
+		SpringApplication.run(ProducerApplication.class, args);
 	}
 
 }

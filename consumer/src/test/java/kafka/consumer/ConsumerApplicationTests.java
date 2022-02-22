@@ -1,4 +1,4 @@
-package br.com.maddytec.kafka.consumer;
+package kafka.consumer;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

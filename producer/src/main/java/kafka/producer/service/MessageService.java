@@ -1,4 +1,4 @@
-package br.com.maddytec.kafka.producer.service;
+package kafka.producer.service;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -8,18 +8,18 @@ import org.springframework.kafka.core.KafkaTemplate;
 import org.springframework.stereotype.Service;
 
 @Service
-public class MensagemService {
+public class MessageService {
 
-    private static final Logger logger = LoggerFactory.getLogger(MensagemService.class);
+    private static final Logger logger = LoggerFactory.getLogger(MessageService.class);
 
-    @Value("${topic.bora-praticar}")
-    private String topicBoraPraticar;
+    @Value("${kafkaTopic}")
+    private String kafkaTopic;
 
     @Autowired
     private KafkaTemplate<String, String> kafkaTemplate;
 
     public void sendMessage(String message) {
-        logger.info("Mensagem -> {}", message);
-        this.kafkaTemplate.send(topicBoraPraticar, message);
+        logger.info("Message -> {}", message);
+        this.kafkaTemplate.send(kafkaTopic, message);
     }
 }
