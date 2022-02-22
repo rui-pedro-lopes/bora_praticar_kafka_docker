@@ -1,4 +1,4 @@
-# Bora Praticar Kafka com Spring Boot e Docker
-Projeto para demonstrar a utilização do Kafka com Spring e Docker   
+# Kafka Project with Spring Boot and Docker
+Project to demonstrate Kafka with Spring and Docker   
 
-* Desenvolvimento de um producer e um cosumer de exemplo -> https://youtu.be/Su49NMD9UiA
+* Develop a producer and a consumer
